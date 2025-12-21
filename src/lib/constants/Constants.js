@@ -31,7 +31,6 @@ const CONSTANTS = {
   shortDetail:
     "A software engineer crafting seamless user experiences with creativity and precision.",
   copyright: "Copyright",
-  currentyear: 2024,
   skills: "SKILLS",
   allRightsReserved: "All rights reserved",
   myDescription: `A passionate self-taught Frontend Software engineer and a freelance developer. My passion for software lies 
