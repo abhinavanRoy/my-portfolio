@@ -22,11 +22,11 @@ export default function Button({
       disabled={isInactive}
       aria-busy={isLoading}
       className={cn(
-        "inline-flex items-center justify-center gap-2 rounded-md border-0 bg-white px-3 py-1 font-google-sans font-medium text-black shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:bg-slate-200",
+        "inline-flex items-center justify-center gap-2 rounded-md border border-transparent bg-tan px-3 py-1 font-google-sans font-medium text-deep-brown shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:bg-latte dark:border-dark-border dark:bg-dark-surface dark:text-dark-text dark:hover:bg-dark-border",
         shouldDimButton &&
-          "cursor-not-allowed opacity-80 shadow-none hover:translate-y-0 hover:bg-white",
+          "cursor-not-allowed opacity-80 shadow-none hover:translate-y-0 hover:bg-tan dark:hover:bg-dark-surface",
         isSuccess &&
-          "cursor-not-allowed shadow-none hover:translate-y-0 hover:bg-white",
+          "cursor-not-allowed shadow-none hover:translate-y-0 hover:bg-tan dark:hover:bg-dark-surface",
         className
       )}
       {...rest}

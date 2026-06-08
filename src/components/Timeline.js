@@ -9,7 +9,7 @@ export default function Timeline({ category = null }) {
 
   return (
     <div className="relative w-full">
-      <div className="absolute bottom-0 left-[7px] top-0 w-px bg-white/20 md:left-1/2 md:-translate-x-1/2" />
+      <div className="absolute bottom-0 left-[7px] top-0 w-px bg-espresso/20 dark:bg-dark-border md:left-1/2 md:-translate-x-1/2" />
 
       <div className="flex flex-col gap-12">
         {filteredEvents.map((event, index) => (
