@@ -16,7 +16,7 @@ export default function ThemeToggle({ className }) {
       type="button"
       onClick={toggleTheme}
       className={cn(
-        "inline-flex items-center justify-center rounded-md border border-latte/70 bg-tan p-2 text-deep-brown shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:bg-latte focus:outline-none dark:border-dark-border dark:bg-dark-surface dark:text-dark-text dark:hover:bg-dark-border",
+        "inline-flex h-10 items-center justify-center rounded-md bg-tan p-2 text-deep-brown shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:bg-latte focus:outline-none dark:bg-dark-surface dark:text-dark-text dark:hover:bg-dark-border",
         className
       )}
       aria-label={toggleLabel}

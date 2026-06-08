@@ -25,26 +25,10 @@ export default function Header() {
 
   return (
     <>
-      <div className="flex w-full justify-between p-7">
+      <div className="relative z-20 flex w-full justify-between p-7">
         <NavBar navItems={navItems} className={"hidden sm:flex"} />
 
-        <div className="hidden items-center gap-3 sm:flex">
-          <LanguageDropdown />
-          <ThemeToggle />
-          <Button
-            className={"sm:text-base md:text-lg"}
-            onClick={() => {
-              downloadResume();
-            }}
-            isDisabled={isResumeDownloading}
-            btnName={resumeButtonLabel}
-            icon={!isResumeDownloading && <HiDownload />}
-          />
-        </div>
-
-        <div className="flex items-center gap-3 sm:hidden">
-          <LanguageDropdown />
-          <ThemeToggle />
+        <div className="flex items-center sm:hidden">
           {isMenuToggle ? (
             <button
               type="button"
@@ -67,26 +51,43 @@ export default function Header() {
             </button>
           )}
         </div>
+
+        <div className="hidden items-center gap-3 sm:flex">
+          <LanguageDropdown />
+          <ThemeToggle />
+          <Button
+            className={"h-10 sm:text-base md:text-lg"}
+            onClick={() => {
+              downloadResume();
+            }}
+            isDisabled={isResumeDownloading}
+            btnName={resumeButtonLabel}
+            icon={!isResumeDownloading && <HiDownload />}
+          />
+        </div>
+
+        <div className="flex items-center gap-3 sm:hidden">
+          <LanguageDropdown />
+          <ThemeToggle />
+          <Button
+            className={"h-10 text-base"}
+            onClick={() => {
+              downloadResume();
+            }}
+            isDisabled={isResumeDownloading}
+            btnName={resumeButtonLabel}
+            icon={!isResumeDownloading && <HiDownload />}
+          />
+        </div>
       </div>
       {isMenuToggle && (
-        <div className="absolute top-20 z-10 flex h-full w-full flex-col items-center gap-5 bg-cream transition-colors duration-300 dark:bg-dark-bg sm:hidden">
-          <>
-            <NavBar
-              navItems={navItems}
-              className={"flex"}
-              isCol={true}
-              setMenuToggle={setMenuToggle}
-            />
-            <Button
-              className={"flex text-base"}
-              onClick={() => {
-                downloadResume();
-              }}
-              isDisabled={isResumeDownloading}
-              btnName={resumeButtonLabel}
-              icon={!isResumeDownloading && <HiDownload />}
-            />
-          </>
+        <div className="fixed inset-0 z-10 flex w-full flex-col items-center gap-5 bg-cream pt-28 transition-colors duration-300 dark:bg-dark-bg sm:hidden">
+          <NavBar
+            navItems={navItems}
+            className={"flex"}
+            isCol={true}
+            setMenuToggle={setMenuToggle}
+          />
         </div>
       )}
     </>

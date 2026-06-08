@@ -35,12 +35,21 @@
     ]
   },
   "home": {
-    "shortDetail": "A software engineer crafting seamless user experiences with creativity and precision.",
+    "shortDetail": "A software engineer crafting seamless user experiences with creativity and precision. Currently pursuing MSc Computer Science at University of Freiburg.",
+    "tagline": "software engineer & ml enthusiast",
+    "greeting": "Hi, I'm",
+    "firstName": "Abhinavan",
+    "roles": [
+      "Software Engineer",
+      "MSc in CS @ Uni Freiburg",
+      "Building cool things"
+    ],
+    "availableStatus": "available for opportunities",
     "quote": "Make it work, make it right, make it fast.",
     "quoteAuthor": "Kent Beck"
   },
   "about": {
-    "description": "A passionate self-taught Frontend Software engineer and a freelance developer. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build. I am self-motivated and a quick learner. I believe that maintaining discipline at work helps both me and my work more effective. I am also an open-source enthusiast.",
+    "description": "A passionate self-taught Frontend Software engineer. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build. I am self-motivated and a quick learner. I believe that maintaining discipline at work helps both me and my work more effective. I am also an open-source enthusiast.",
     "journeyTitle": "MY JOURNEY",
     "journeyIntro": "A quick look at the education and experience milestones that shaped my journey in software engineering.",
     "educationHeading": "EDUCATION",

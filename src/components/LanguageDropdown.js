@@ -51,7 +51,7 @@ export default function LanguageDropdown({ className }) {
       <button
         type="button"
         onClick={() => setIsOpen((currentState) => !currentState)}
-        className="inline-flex items-center justify-center gap-2 rounded-md border border-latte/70 bg-tan px-3 py-2 text-deep-brown shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:bg-latte focus:outline-none dark:border-dark-border dark:bg-dark-surface dark:text-dark-text dark:hover:bg-dark-border"
+        className="inline-flex h-10 items-center justify-center gap-2 rounded-md bg-tan px-3 py-2 text-deep-brown shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:bg-latte focus:outline-none dark:bg-dark-surface dark:text-dark-text dark:hover:bg-dark-border"
         aria-expanded={isOpen}
         aria-haspopup="listbox"
         aria-label={t("languageSwitcher.buttonLabel")}
@@ -70,9 +70,6 @@ export default function LanguageDropdown({ className }) {
 
       {isOpen && (
         <div className="absolute right-0 top-full z-20 mt-2 min-w-[6rem] overflow-hidden rounded-md border border-latte/70 bg-cream shadow-xl dark:border-dark-border dark:bg-dark-surface">
-          <p className="px-3 pb-1 pt-3 text-xs font-semibold uppercase tracking-[0.18em] text-deep-brown/70 dark:text-dark-muted">
-            {t("languageSwitcher.label")}
-          </p>
           <ul role="listbox" aria-label={t("languageSwitcher.label")} className="py-1">
             {languageOptions.map((option) => {
               const isSelected = option.code === i18n.resolvedLanguage;

@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useFirstVisit } from "../lib/hooks/useFirstVisit";
 /** Assets */
-import profilePic from "../assets/images/profilePic.jpeg";
+import profilePic from "../assets/images/profilePic.png";
 /** Components */
 import Skills from "../components/Skills";
 import Timeline from "../components/Timeline";
@@ -21,7 +21,7 @@ export default function About() {
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-16">
         <div className="flex flex-col items-center gap-10 sm:flex-row sm:items-start">
           <img
-            className={`h-36 w-36 rounded-full border-4 border-latte object-cover dark:border-tan sm:h-44 sm:w-44 ${imageAnimationClass}`}
+            className={`h-48 w-48 rounded-full border-4 border-latte object-cover dark:border-tan sm:h-56 sm:w-56 ${imageAnimationClass}`}
             src={profilePic}
             alt={t("brand.profilePicAlt")}
           />
@@ -29,7 +29,7 @@ export default function About() {
           <div
             className={`flex w-full flex-col gap-5 ${descriptionAnimationClass}`}
           >
-            <p className="w-full text-justify font-google-sans text-lg font-light text-deep-brown dark:text-dark-text md:text-xl">
+            <p className="w-full font-google-sans text-lg font-light text-deep-brown dark:text-dark-text md:text-xl">
               {t("about.description")}
             </p>
           </div>
