@@ -10,7 +10,7 @@ export const useDownloadResume = () => {
         try {
             setResumeDownloading(true)
 
-            const response = await fetch("/CV_Abhinavan_Roy.pdf")
+            const response = await fetch("/CV_Abhinavan Roy.pdf")
             if (!response.ok) {
                 throw new Error(t("contact.errors.resumeFileUnavailable"))
             }

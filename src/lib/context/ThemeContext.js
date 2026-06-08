@@ -20,7 +20,7 @@ function getInitialTheme() {
     return false;
   }
 
-  return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  return false;
 }
 
 export function ThemeProvider({ children }) {
