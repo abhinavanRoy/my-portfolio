@@ -5,12 +5,13 @@ module.exports = {
   theme: {
     fontFamily: {
       "google-sans": ["Google Sans", "sans-serif"],
+      "jetbrains-mono": ["JetBrains Mono", "monospace"],
       poppins: ["Poppins", "sans-serif"],
       paprika: ["Paprika", "sans-serif"],
       playwrite: ["Playwrite AU VIC", "cursive"],
     },
     screens: {
-      'sm': '600px',
+      'sm': '690px',
       'md': '740px',
       'lg': '1024px'
     },
@@ -33,6 +34,10 @@ module.exports = {
           "0%": { transform: "translateX(100%)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
+        "cursor-blink": {
+          "0%, 49%": { opacity: "1" },
+          "50%, 100%": { opacity: "0" },
+        },
         "fade-in-up": {
           "0%": { opacity: "0", transform: "translateY(20px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
@@ -53,6 +58,7 @@ module.exports = {
       },
       animation: {
         "slide-in-right": "slide-in-right 0.3s ease-out",
+        "cursor-blink": "cursor-blink 1s step-end infinite",
         "fade-in-up": "fade-in-up 0.5s ease-out forwards",
         "fade-in-up-delayed": "fade-in-up 0.5s ease-out 0.2s forwards",
         "fade-in-up-delayed-2": "fade-in-up 0.5s ease-out 0.4s forwards",

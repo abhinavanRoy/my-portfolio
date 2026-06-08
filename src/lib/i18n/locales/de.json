@@ -35,12 +35,21 @@
     ]
   },
   "home": {
-    "shortDetail": "Ein Softwareentwickler, der mit Kreativität und Präzision nahtlose Nutzererlebnisse gestaltet.",
+    "shortDetail": "Ein Softwareentwickler, der mit Kreativität und Präzision nahtlose Nutzererlebnisse gestaltet. Derzeit im MSc Informatik an der Universität Freiburg.",
+    "tagline": "softwareentwickler & ml-enthusiast",
+    "greeting": "Hi, ich bin",
+    "firstName": "Abhinavan",
+    "roles": [
+      "Softwareentwickler",
+      "MSc in Informatik @ Uni Freiburg",
+      "Coole Dinge bauen"
+    ],
+    "availableStatus": "offen fur neue moglichkeiten",
     "quote": "Mach es funktionsfähig, mach es richtig, mach es schnell.",
     "quoteAuthor": "Kent Beck"
   },
   "about": {
-    "description": "Ich bin ein leidenschaftlicher, autodidaktischer Frontend-Softwareentwickler und freiberuflicher Entwickler. Meine Begeisterung für Software liegt darin, Ideen zu träumen und sie mit eleganten Interfaces Wirklichkeit werden zu lassen. Ich lege großen Wert auf die Experience, die Architektur und die Codequalität der Produkte, die ich entwickle. Ich bin selbstmotiviert und lerne schnell. Ich glaube, dass Disziplin bei der Arbeit sowohl mir als auch meiner Arbeit hilft, effektiver zu sein. Außerdem bin ich ein Open-Source-Enthusiast.",
+    "description": "Ich bin ein leidenschaftlicher, autodidaktischer Frontend-Softwareentwickler. Meine Begeisterung für Software liegt darin, Ideen zu träumen und sie mit eleganten Interfaces Wirklichkeit werden zu lassen. Ich lege großen Wert auf die Experience, die Architektur und die Codequalität der Produkte, die ich entwickle. Ich bin selbstmotiviert und lerne schnell. Ich glaube, dass Disziplin bei der Arbeit sowohl mir als auch meiner Arbeit hilft, effektiver zu sein. Außerdem bin ich ein Open-Source-Enthusiast.",
     "journeyTitle": "MEIN WEG",
     "journeyIntro": "Ein kurzer Blick auf die Ausbildungs- und Berufsstationen, die meinen Weg in der Softwareentwicklung geprägt haben.",
     "educationHeading": "AUSBILDUNG",
