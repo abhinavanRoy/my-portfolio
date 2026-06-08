@@ -25,7 +25,7 @@ export default function Home() {
     : "";
 
   return (
-    <section className="mx-auto flex min-h-[70vh] w-full max-w-6xl items-center px-5 py-10 md:px-8 md:py-16">
+    <section className="mx-auto flex min-h-[70vh] w-full max-w-6xl flex-col justify-center px-5 py-10 md:px-8 md:py-16">
       <div className="max-w-3xl text-left">
         <p
           className={`mb-6 font-google-sans text-xs uppercase tracking-[0.28em] text-deep-brown/60 dark:text-dark-muted/70 sm:text-sm ${taglineAnimationClass}`}
@@ -58,16 +58,16 @@ export default function Home() {
           />
           <span>{t("home.availableStatus")}</span>
         </div>
-        <blockquote
-          className={`mt-12 max-w-2xl text-center font-playwrite text-sm leading-relaxed text-deep-brown/70 dark:text-dark-muted sm:text-base md:text-lg ${quoteAnimationClass}`}
-        >
-          "{t("home.quote")}"
-          <footer className="mt-3 font-google-sans text-sm text-deep-brown/50 dark:text-dark-muted/80">
-            {"- "}
-            {t("home.quoteAuthor")}
-          </footer>
-        </blockquote>
       </div>
+      <blockquote
+        className={`mx-auto mt-20 max-w-2xl text-center font-playwrite text-sm leading-relaxed text-deep-brown/70 dark:text-dark-muted sm:text-base md:text-lg ${quoteAnimationClass}`}
+      >
+        "{t("home.quote")}"
+        <footer className="mt-3 font-google-sans text-sm text-deep-brown/50 dark:text-dark-muted/80">
+          {"- "}
+          {t("home.quoteAuthor")}
+        </footer>
+      </blockquote>
     </section>
   );
 }
