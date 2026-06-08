@@ -1,6 +1,7 @@
 /* Hooks */
 import { useEffect, useState } from "react";
 import { RoughNotation } from "react-rough-notation";
+import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 
 /* Utils */
@@ -13,7 +14,7 @@ export default function NavBar({
   isCol = false,
   setMenuToggle = null,
 }) {
-
+  const { t } = useTranslation();
   const location = useLocation();
   const navigate = useNavigate();
   const [selectedNavItem, setSelectedNavItem] = useState(
@@ -59,7 +60,9 @@ export default function NavBar({
                 iterations={2}
                 animationDuration={300}
               >
-                <span className="inline-block pb-1">{navItem.itemName}</span>
+                <span className="inline-block pb-1">
+                  {navItem.itemName || t(navItem.itemLabelKey)}
+                </span>
               </RoughNotation>
             </button>
           </li>

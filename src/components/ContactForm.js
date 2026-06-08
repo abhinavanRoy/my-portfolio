@@ -4,10 +4,10 @@ import Toast from "./Toast";
 /** hooks */
 import { useContactForm } from "../lib/hooks/useContactForm";
 import { useEffect, useState } from "react";
-/** utils */
-import CONSTANTS from "../lib/constants/Constants";
+import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
+  const { t } = useTranslation();
   const {
     submitForm,
     isFormSubmitted,
@@ -55,7 +55,7 @@ export default function ContactForm() {
           onChange={(e) => setName(e.target.value)}
           className="w-full max-w-md rounded-md border border-transparent bg-tan p-2 font-google-sans text-lg font-normal text-deep-brown outline-none placeholder:text-deep-brown/60 focus:ring-2 focus:ring-latte dark:border-dark-border dark:bg-dark-surface dark:text-dark-text dark:placeholder:text-dark-muted/70"
           type="text"
-          placeholder="Name"
+          placeholder={t("contact.placeholders.name")}
         />
         <input
           value={email}
@@ -63,14 +63,14 @@ export default function ContactForm() {
           onChange={(e) => setEmail(e.target.value)}
           className="w-full max-w-md rounded-md border border-transparent bg-tan p-2 font-google-sans text-lg font-normal text-deep-brown outline-none placeholder:text-deep-brown/60 focus:ring-2 focus:ring-latte dark:border-dark-border dark:bg-dark-surface dark:text-dark-text dark:placeholder:text-dark-muted/70"
           type="email"
-          placeholder="Email"
+          placeholder={t("contact.placeholders.email")}
         />
         <textarea
           required
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           className="min-h-32 w-full max-w-md rounded-md border border-transparent bg-tan p-2 font-google-sans text-lg font-normal text-deep-brown outline-none placeholder:text-deep-brown/60 focus:ring-2 focus:ring-latte dark:border-dark-border dark:bg-dark-surface dark:text-dark-text dark:placeholder:text-dark-muted/70"
-          placeholder="Message"
+          placeholder={t("contact.placeholders.message")}
         />
         <Button
           type="submit"
@@ -78,7 +78,7 @@ export default function ContactForm() {
           isSuccess={showSuccess}
           isDisabled={isFormSubmitting || showSuccess}
           className={"w-32 py-3 text-xl sm:py-2 sm:text-xl"}
-          btnName={CONSTANTS.send}
+          btnName={t("actions.send")}
         />
       </form>
     </>

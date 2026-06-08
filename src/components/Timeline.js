@@ -1,8 +1,13 @@
-import CONSTANTS from "../lib/constants/Constants";
+import { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import TimelineEvent from "./TimelineEvent";
 
 export default function Timeline({ category = null }) {
-  const { timelineEvents } = CONSTANTS;
+  const { t } = useTranslation();
+  const timelineEvents = useMemo(
+    () => t("about.timelineEvents", { returnObjects: true }),
+    [t]
+  );
   const filteredEvents = category
     ? timelineEvents.filter((event) => event.category === category)
     : timelineEvents;

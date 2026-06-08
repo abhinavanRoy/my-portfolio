@@ -1,5 +1,4 @@
-/** Utils */
-import CONSTANTS from "../lib/constants/Constants";
+import { useTranslation } from "react-i18next";
 import { useFirstVisit } from "../lib/hooks/useFirstVisit";
 /** Assets */
 import profilePic from "../assets/images/profilePic.jpeg";
@@ -8,6 +7,7 @@ import Skills from "../components/Skills";
 import Timeline from "../components/Timeline";
 
 export default function About() {
+  const { t } = useTranslation();
   const isFirstVisit = useFirstVisit("about");
   const imageAnimationClass = isFirstVisit
     ? "opacity-0 animate-fade-in-up"
@@ -23,14 +23,14 @@ export default function About() {
           <img
             className={`h-36 w-36 rounded-full border-4 border-latte object-cover dark:border-tan sm:h-44 sm:w-44 ${imageAnimationClass}`}
             src={profilePic}
-            alt={CONSTANTS.profilePic}
+            alt={t("brand.profilePicAlt")}
           />
 
           <div
             className={`flex w-full flex-col gap-5 ${descriptionAnimationClass}`}
           >
             <p className="w-full text-justify font-google-sans text-lg font-light text-deep-brown dark:text-dark-text md:text-xl">
-              {CONSTANTS.myDescription}
+              {t("about.description")}
             </p>
           </div>
         </div>
@@ -38,25 +38,24 @@ export default function About() {
         <section className="flex flex-col gap-10">
           <div className="flex flex-col gap-3">
             <h2 className="font-google-sans text-2xl font-semibold text-espresso dark:text-latte md:text-3xl">
-              {CONSTANTS.myJourney}
+              {t("about.journeyTitle")}
             </h2>
             <p className="max-w-2xl font-google-sans text-base font-light text-deep-brown/80 dark:text-dark-muted md:text-lg">
-              A quick look at the education and experience milestones that
-              shaped my journey in software engineering.
+              {t("about.journeyIntro")}
             </p>
           </div>
 
           <div className="flex flex-col gap-16">
             <section className="flex flex-col gap-8">
               <h3 className="font-google-sans text-xl font-semibold text-espresso dark:text-latte md:text-2xl">
-                {CONSTANTS.educationHeading}
+                {t("about.educationHeading")}
               </h3>
               <Timeline category="education" />
             </section>
 
             <section className="flex flex-col gap-8">
               <h3 className="font-google-sans text-xl font-semibold text-espresso dark:text-latte md:text-2xl">
-                {CONSTANTS.experienceHeading}
+                {t("about.experienceHeading")}
               </h3>
               <Timeline category="experience" />
             </section>

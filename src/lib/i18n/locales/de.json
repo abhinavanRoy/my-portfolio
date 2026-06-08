@@ -1,0 +1,153 @@
+{
+  "brand": {
+    "name": "Abhinavan Roy",
+    "profilePicAlt": "Porträt von Abhinavan Roy",
+    "siteTitle": "Abhinavan Roy",
+    "siteDescription": "Ein Softwareentwickler, der mit Kreativität und Präzision nahtlose Nutzererlebnisse gestaltet."
+  },
+  "nav": {
+    "items": [
+      { "id": 1, "itemName": "Start", "itemUrl": "/" },
+      { "id": 2, "itemName": "Über mich", "itemUrl": "/about" },
+      { "id": 3, "itemName": "Projekte", "itemUrl": "/projects" },
+      { "id": 4, "itemName": "Kontakt", "itemUrl": "/contact" }
+    ]
+  },
+  "actions": {
+    "resume": "Lebenslauf",
+    "downloading": "Wird heruntergeladen...",
+    "send": "Senden",
+    "sending": "Wird gesendet...",
+    "sent": "Gesendet!",
+    "closeNotification": "Benachrichtigung schließen",
+    "openNavigationMenu": "Navigationsmenü öffnen",
+    "closeNavigationMenu": "Navigationsmenü schließen",
+    "switchToLightMode": "Zum hellen Modus wechseln",
+    "switchToDarkMode": "Zum dunklen Modus wechseln"
+  },
+  "languageSwitcher": {
+    "label": "Sprache",
+    "buttonLabel": "Sprache ändern",
+    "currentLanguage": "Aktuelle Sprache: {{language}}",
+    "options": [
+      { "code": "en", "label": "English", "shortLabel": "EN", "flag": "🇬🇧" },
+      { "code": "de", "label": "Deutsch", "shortLabel": "DE", "flag": "🇩🇪" }
+    ]
+  },
+  "home": {
+    "shortDetail": "Ein Softwareentwickler, der mit Kreativität und Präzision nahtlose Nutzererlebnisse gestaltet.",
+    "quote": "Mach es funktionsfähig, mach es richtig, mach es schnell.",
+    "quoteAuthor": "Kent Beck"
+  },
+  "about": {
+    "description": "Ich bin ein leidenschaftlicher, autodidaktischer Frontend-Softwareentwickler und freiberuflicher Entwickler. Meine Begeisterung für Software liegt darin, Ideen zu träumen und sie mit eleganten Interfaces Wirklichkeit werden zu lassen. Ich lege großen Wert auf die Experience, die Architektur und die Codequalität der Produkte, die ich entwickle. Ich bin selbstmotiviert und lerne schnell. Ich glaube, dass Disziplin bei der Arbeit sowohl mir als auch meiner Arbeit hilft, effektiver zu sein. Außerdem bin ich ein Open-Source-Enthusiast.",
+    "journeyTitle": "MEIN WEG",
+    "journeyIntro": "Ein kurzer Blick auf die Ausbildungs- und Berufsstationen, die meinen Weg in der Softwareentwicklung geprägt haben.",
+    "educationHeading": "AUSBILDUNG",
+    "experienceHeading": "BERUFSERFAHRUNG",
+    "timelineEvents": [
+      {
+        "id": 1,
+        "category": "education",
+        "title": "Master of Technology in Informatik",
+        "organization": "Universität Freiburg",
+        "location": "Deutschland",
+        "startDate": "Oktober 2024",
+        "endDate": "Heute",
+        "description": "Ich vertiefe meine Grundlagen in Systemen, Algorithmen und modernen Software-Engineering-Praktiken."
+      },
+      {
+        "id": 3,
+        "category": "education",
+        "title": "Bachelor of Technology in Informatik",
+        "organization": "SRM University of Technology",
+        "location": "Chennai, Indien",
+        "startDate": "Juli 2018",
+        "endDate": "Mai 2022",
+        "description": "Ich habe eine starke Grundlage in Informatik, Algorithmen und Softwareentwicklung aufgebaut."
+      },
+      {
+        "id": 2,
+        "category": "experience",
+        "title": "Softwareentwickler",
+        "organization": "Airtel Africa Digital Labs",
+        "location": "Gurugram, Indien",
+        "startDate": "Juni 2022",
+        "endDate": "Oktober 2023",
+        "description": "Ich habe Benutzeroberflächen für agentenorientierte Web-Apps entwickelt, REST-APIs integriert und ein Token-Management-System für die Warteschlangenabwicklung im Geschäft gebaut."
+      },
+      {
+        "id": 4,
+        "category": "experience",
+        "title": "Technischer Mitarbeiter",
+        "organization": "Sutherland Global Services",
+        "location": "Bangalore, Indien",
+        "startDate": "Februar 2021",
+        "endDate": "April 2021",
+        "description": "Ich habe Remote-Fehlerbehebung durchgeführt, Kundinnen und Kunden durch Lösungen geführt und mehrere Support-Fälle in einem schnellen Umfeld betreut."
+      }
+    ]
+  },
+  "skills": {
+    "title": "FÄHIGKEITEN",
+    "defaultSkill": "Standardfähigkeit",
+    "groups": [
+      {
+        "skillGroupId": 1,
+        "skillGroupName": "Markup- und Programmiersprachen",
+        "skillGroupItems": ["HTML", "Javascript", "Typescript", "C++", "Python"]
+      },
+      {
+        "skillGroupId": 2,
+        "skillGroupName": "Styling",
+        "skillGroupItems": ["CSS", "SCSS", "Tailwind"]
+      },
+      {
+        "skillGroupId": 3,
+        "skillGroupName": "Bibliotheken",
+        "skillGroupItems": ["React"]
+      },
+      {
+        "skillGroupId": 4,
+        "skillGroupName": "Weitere",
+        "skillGroupItems": ["Git", "REST", "Figma"]
+      }
+    ],
+    "languagesTitle": "SPRACHEN",
+    "languageList": [
+      { "name": "Englisch", "level": "C1" },
+      { "name": "Deutsch", "level": "A2" },
+      { "name": "Hindi", "level": "Muttersprache" },
+      { "name": "Bengalisch", "level": "Muttersprache" }
+    ]
+  },
+  "contact": {
+    "loveToHear": "Ich freue mich, von dir zu hören! 😄 ",
+    "leaveMessage": "Hinterlasse unten eine Nachricht und ich melde mich so schnell wie möglich bei dir.",
+    "connectWithMe": "Verbinde dich mit mir",
+    "placeholders": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht"
+    },
+    "errors": {
+      "generic": "Beim Senden deiner Nachricht ist etwas schiefgelaufen. Bitte versuche es erneut.",
+      "missingConfig": "Das Kontaktformular ist noch nicht konfiguriert. Füge deinen Web3Forms-Zugangsschlüssel hinzu, um es zu aktivieren.",
+      "resumeUnavailable": "Der Lebenslauf ist derzeit nicht verfügbar. Bitte versuche es später erneut.",
+      "resumeFileUnavailable": "Die Lebenslauf-Datei ist derzeit nicht verfügbar.",
+      "resumeDownloadFailed": "Der Download des Lebenslaufs ist fehlgeschlagen"
+    },
+    "toastErrorTitle": "Fehler",
+    "socials": {
+      "linkedinAria": "{{name}} auf LinkedIn besuchen",
+      "xAria": "{{name}} auf X besuchen",
+      "githubAria": "{{name}} auf GitHub besuchen"
+    }
+  },
+  "footer": {
+    "allRightsReserved": "Alle Rechte vorbehalten"
+  },
+  "projects": {
+    "title": "Projektseite"
+  }
+}
