@@ -1,7 +1,9 @@
 /* Hooks */
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export const useDownloadResume = () => {
+    const { t } = useTranslation();
     const [isResumeDownloading, setResumeDownloading] = useState(false)
 
     const downloadResume = async () => {
@@ -10,7 +12,7 @@ export const useDownloadResume = () => {
 
             const response = await fetch("/CV_Abhinavan_Roy.pdf")
             if (!response.ok) {
-                throw new Error("Resume file is unavailable right now.")
+                throw new Error(t("contact.errors.resumeFileUnavailable"))
             }
             const blob = await response.blob()
             const url = window.URL.createObjectURL(blob)
@@ -23,8 +25,8 @@ export const useDownloadResume = () => {
             window.URL.revokeObjectURL(url)
 
         } catch (error) {
-            console.error("Resume download failed", error)
-            window.alert("Resume is unavailable right now. Please try again later.")
+            console.error(t("contact.errors.resumeDownloadFailed"), error)
+            window.alert(t("contact.errors.resumeUnavailable"))
         } finally {
             setResumeDownloading(false)
         }

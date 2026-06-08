@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import CONSTANTS from "../constants/Constants";
 
 export const useContactForm = () => {
+    const { t } = useTranslation();
     const abortControllerRef = useRef(null);
     const isMountedRef = useRef(true);
 
@@ -34,7 +36,7 @@ export const useContactForm = () => {
         setError("");
 
         if (!CONSTANTS.web3FormsAccessKey) {
-            setError(CONSTANTS.missingContactConfig);
+            setError(t("contact.errors.missingConfig"));
             return;
         }
 
@@ -62,7 +64,7 @@ export const useContactForm = () => {
             const result = await response.json();
 
             if (!response.ok || !result.success) {
-                throw new Error(result.message || CONSTANTS.contactFormError);
+                throw new Error(result.message || t("contact.errors.generic"));
             }
 
             if (isMountedRef.current) {
@@ -70,7 +72,7 @@ export const useContactForm = () => {
             }
         } catch (submitError) {
             if (submitError.name !== "AbortError" && isMountedRef.current) {
-                setError(submitError.message || CONSTANTS.contactFormError);
+                setError(submitError.message || t("contact.errors.generic"));
             }
         } finally {
             if (isMountedRef.current) {

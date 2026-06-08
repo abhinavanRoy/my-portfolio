@@ -1,4 +1,5 @@
 /* Utils */
+import { useTranslation } from "react-i18next";
 import { cn } from "../lib/utils";
 
 export default function Button({
@@ -12,6 +13,7 @@ export default function Button({
   className,
   ...rest
 }) {
+  const { t } = useTranslation();
   const isInactive = isDisabled || isLoading || isSuccess;
   const shouldDimButton = isDisabled || isLoading;
 
@@ -61,7 +63,9 @@ export default function Button({
           <path d="M5 13l4 4L19 7" />
         </svg>
       )}
-      <span>{isLoading ? "Sending..." : isSuccess ? "Sent!" : btnName}</span>
+      <span>
+        {isLoading ? t("actions.sending") : isSuccess ? t("actions.sent") : btnName}
+      </span>
       {!isLoading && !isSuccess && icon}
     </button>
   );

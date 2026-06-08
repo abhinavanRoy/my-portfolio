@@ -1,0 +1,153 @@
+{
+  "brand": {
+    "name": "Abhinavan Roy",
+    "profilePicAlt": "Portrait of Abhinavan Roy",
+    "siteTitle": "Abhinavan Roy",
+    "siteDescription": "A software engineer crafting seamless user experiences with creativity and precision."
+  },
+  "nav": {
+    "items": [
+      { "id": 1, "itemName": "Home", "itemUrl": "/" },
+      { "id": 2, "itemName": "About", "itemUrl": "/about" },
+      { "id": 3, "itemName": "Projects", "itemUrl": "/projects" },
+      { "id": 4, "itemName": "Contact me", "itemUrl": "/contact" }
+    ]
+  },
+  "actions": {
+    "resume": "Resume",
+    "downloading": "Downloading...",
+    "send": "Send",
+    "sending": "Sending...",
+    "sent": "Sent!",
+    "closeNotification": "Close notification",
+    "openNavigationMenu": "Open navigation menu",
+    "closeNavigationMenu": "Close navigation menu",
+    "switchToLightMode": "Switch to light mode",
+    "switchToDarkMode": "Switch to dark mode"
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "buttonLabel": "Change language",
+    "currentLanguage": "Current language: {{language}}",
+    "options": [
+      { "code": "en", "label": "English", "shortLabel": "EN", "flag": "🇬🇧" },
+      { "code": "de", "label": "Deutsch", "shortLabel": "DE", "flag": "🇩🇪" }
+    ]
+  },
+  "home": {
+    "shortDetail": "A software engineer crafting seamless user experiences with creativity and precision.",
+    "quote": "Make it work, make it right, make it fast.",
+    "quoteAuthor": "Kent Beck"
+  },
+  "about": {
+    "description": "A passionate self-taught Frontend Software engineer and a freelance developer. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build. I am self-motivated and a quick learner. I believe that maintaining discipline at work helps both me and my work more effective. I am also an open-source enthusiast.",
+    "journeyTitle": "MY JOURNEY",
+    "journeyIntro": "A quick look at the education and experience milestones that shaped my journey in software engineering.",
+    "educationHeading": "EDUCATION",
+    "experienceHeading": "WORK EXPERIENCE",
+    "timelineEvents": [
+      {
+        "id": 1,
+        "category": "education",
+        "title": "Master of Technology in Computer Science",
+        "organization": "University of Freiburg",
+        "location": "Germany",
+        "startDate": "October 2024",
+        "endDate": "Present",
+        "description": "Strengthening core foundations in systems, algorithms, and modern software engineering practices."
+      },
+      {
+        "id": 3,
+        "category": "education",
+        "title": "Bachelor of Technology in Computer Science",
+        "organization": "SRM University of Technology",
+        "location": "Chennai, India",
+        "startDate": "July 2018",
+        "endDate": "May 2022",
+        "description": "Built a strong foundation in computer science, algorithms, and software development."
+      },
+      {
+        "id": 2,
+        "category": "experience",
+        "title": "Software Engineer",
+        "organization": "Airtel Africa Digital Labs",
+        "location": "Gurugram, India",
+        "startDate": "June 2022",
+        "endDate": "October 2023",
+        "description": "Built user interfaces for agent-facing web apps, integrated REST APIs, and developed a token management system for in-store queue handling."
+      },
+      {
+        "id": 4,
+        "category": "experience",
+        "title": "Technical Associate",
+        "organization": "Sutherland Global Services",
+        "location": "Bangalore, India",
+        "startDate": "February 2021",
+        "endDate": "April 2021",
+        "description": "Handled remote troubleshooting, guided customers through solutions, and managed multiple support cases in a fast-paced support environment."
+      }
+    ]
+  },
+  "skills": {
+    "title": "SKILLS",
+    "defaultSkill": "Default skill",
+    "groups": [
+      {
+        "skillGroupId": 1,
+        "skillGroupName": "Markup and Programming Languages",
+        "skillGroupItems": ["HTML", "Javascript", "Typescript", "C++", "Python"]
+      },
+      {
+        "skillGroupId": 2,
+        "skillGroupName": "Styling",
+        "skillGroupItems": ["CSS", "SCSS", "Tailwind"]
+      },
+      {
+        "skillGroupId": 3,
+        "skillGroupName": "Libraries",
+        "skillGroupItems": ["React"]
+      },
+      {
+        "skillGroupId": 4,
+        "skillGroupName": "Others",
+        "skillGroupItems": ["Git", "REST", "Figma"]
+      }
+    ],
+    "languagesTitle": "LANGUAGES",
+    "languageList": [
+      { "name": "English", "level": "C1" },
+      { "name": "German", "level": "A2" },
+      { "name": "Hindi", "level": "Native" },
+      { "name": "Bengali", "level": "Mother tongue" }
+    ]
+  },
+  "contact": {
+    "loveToHear": "I would love to hear from you! 😄 ",
+    "leaveMessage": "Leave a message below, and I'll get back to you as soon as possible",
+    "connectWithMe": "Connect with me",
+    "placeholders": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message"
+    },
+    "errors": {
+      "generic": "Something went wrong while sending your message. Please try again.",
+      "missingConfig": "The contact form is not configured yet. Add your Web3Forms access key to enable it.",
+      "resumeUnavailable": "Resume is unavailable right now. Please try again later.",
+      "resumeFileUnavailable": "Resume file is unavailable right now.",
+      "resumeDownloadFailed": "Resume download failed"
+    },
+    "toastErrorTitle": "Error",
+    "socials": {
+      "linkedinAria": "Visit {{name}} on LinkedIn",
+      "xAria": "Visit {{name}} on X",
+      "githubAria": "Visit {{name}} on GitHub"
+    }
+  },
+  "footer": {
+    "allRightsReserved": "All rights reserved"
+  },
+  "projects": {
+    "title": "Project page"
+  }
+}

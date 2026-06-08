@@ -1,16 +1,23 @@
-/** utils */
-import CONSTANTS from "../lib/constants/Constants";
+import { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 /**components */
 import Chip from "./Chip";
 
 export default function Skills() {
-  const skillList = CONSTANTS.skillList;
-  const languageList = CONSTANTS.languageList;
+  const { t } = useTranslation();
+  const skillList = useMemo(
+    () => t("skills.groups", { returnObjects: true }),
+    [t]
+  );
+  const languageList = useMemo(
+    () => t("skills.languageList", { returnObjects: true }),
+    [t]
+  );
 
   return (
     <div className="flex flex-col gap-6">
       <h2 className="font-google-sans text-2xl font-semibold text-espresso dark:text-latte">
-        {CONSTANTS.skills}
+        {t("skills.title")}
       </h2>
       {skillList.map((skillGroup) => (
         <div key={skillGroup.skillGroupId}>
@@ -27,7 +34,7 @@ export default function Skills() {
 
       <div className="flex flex-col gap-1">
         <h2 className="font-google-sans text-2xl font-semibold text-espresso dark:text-latte">
-          {CONSTANTS.languages}
+          {t("skills.languagesTitle")}
         </h2>
         <div className="flex flex-wrap gap-2 pl-4 py-1">
           {languageList.map((language) => (
