@@ -44,15 +44,17 @@ export default function NavBar({
           <li key={navItem.id}>
             <button
               type="button"
-              className={`cursor-pointer text-2xl sm:text-xl md:text-2xl font-google-sans font-semibold transition-colors duration-200 ease-in-out ${
-                selectedNavItem === navItem.id ? "text-white" : "text-slate-600"
+              className={`cursor-pointer font-google-sans text-2xl font-semibold transition-colors duration-200 ease-in-out sm:text-xl md:text-2xl ${
+                selectedNavItem === navItem.id
+                  ? "text-espresso dark:text-latte"
+                  : "text-deep-brown/60 dark:text-dark-muted/80"
               }`}
               onClick={() => navigateToPage(navItem)}
             >
               <RoughNotation
                 type="underline"
                 show={selectedNavItem === navItem.id}
-                color="#ffffff"
+                color="#C9A87C"
                 strokeWidth={2}
                 iterations={2}
                 animationDuration={300}

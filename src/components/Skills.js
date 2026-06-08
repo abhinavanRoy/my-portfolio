@@ -9,12 +9,12 @@ export default function Skills() {
 
   return (
     <div className="flex flex-col gap-6">
-      <h2 className="text-white font-google-sans font-semibold text-2xl">
+      <h2 className="font-google-sans text-2xl font-semibold text-espresso dark:text-latte">
         {CONSTANTS.skills}
       </h2>
       {skillList.map((skillGroup) => (
         <div key={skillGroup.skillGroupId}>
-          <h3 className="text-white font-google-sans font-light pl-4 opacity-90 text-lg">
+          <h3 className="pl-4 font-google-sans text-lg font-light text-deep-brown opacity-90 dark:text-dark-muted">
             {skillGroup.skillGroupName}
           </h3>
           <div className="flex flex-wrap gap-2 pl-4 py-1">
@@ -26,7 +26,7 @@ export default function Skills() {
       ))}
 
       <div className="flex flex-col gap-1">
-        <h2 className="text-white font-google-sans font-semibold text-2xl">
+        <h2 className="font-google-sans text-2xl font-semibold text-espresso dark:text-latte">
           {CONSTANTS.languages}
         </h2>
         <div className="flex flex-wrap gap-2 pl-4 py-1">

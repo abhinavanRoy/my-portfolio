@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{html,js}"],
   theme: {
     fontFamily: {
@@ -15,6 +16,18 @@ module.exports = {
     },
 
     extend: {
+      colors: {
+        cream: "#F5ECD7",
+        latte: "#C9A87C",
+        espresso: "#7B5B3A",
+        "deep-brown": "#3D2B1F",
+        tan: "#E0C9A6",
+        "dark-bg": "#1B1510",
+        "dark-surface": "#2A211A",
+        "dark-text": "#F7F1E8",
+        "dark-muted": "#D8C9B5",
+        "dark-border": "#4A3A2D",
+      },
       keyframes: {
         "slide-in-right": {
           "0%": { transform: "translateX(100%)", opacity: "0" },

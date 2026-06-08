@@ -1,6 +1,7 @@
 /* Components */
 import NavBar from "./NavBar";
 import Button from "./Button";
+import ThemeToggle from "./ThemeToggle";
 
 /* Hooks */
 import { useState } from "react";
@@ -20,47 +21,51 @@ export default function Header() {
 
   return (
     <>
-      <div className="flex p-7 w-full justify-between ">
-        <NavBar navItems={CONSTANTS.navItems} className={"hidden sm:flex "} />
+      <div className="flex w-full justify-between p-7">
+        <NavBar navItems={CONSTANTS.navItems} className={"hidden sm:flex"} />
 
-        <Button
-          className={"hidden sm:flex sm:text-base md:text-lg"}
-          onClick={() => {
-            downloadResume();
-          }}
-          isDisabled={isResumeDownloading}
-          btnName={
-            isResumeDownloading ? CONSTANTS.downloading : CONSTANTS.resume
-          }
-          icon={!isResumeDownloading && <HiDownload />}
-        />
+        <div className="hidden items-center gap-3 sm:flex">
+          <ThemeToggle />
+          <Button
+            className={"sm:text-base md:text-lg"}
+            onClick={() => {
+              downloadResume();
+            }}
+            isDisabled={isResumeDownloading}
+            btnName={
+              isResumeDownloading ? CONSTANTS.downloading : CONSTANTS.resume
+            }
+            icon={!isResumeDownloading && <HiDownload />}
+          />
+        </div>
 
-        <div className="flex sm:hidden">
+        <div className="flex items-center gap-3 sm:hidden">
+          <ThemeToggle />
           {isMenuToggle ? (
             <button
               type="button"
-              className="cursor-pointer"
+              className="cursor-pointer rounded-sm text-deep-brown transition-colors duration-200 ease-in-out dark:text-dark-text"
               aria-expanded={isMenuToggle}
               aria-label="Close navigation menu"
               onClick={() => setMenuToggle(false)}
             >
-              <AiOutlineClose color="white" size={30} />
+              <AiOutlineClose size={30} />
             </button>
           ) : (
             <button
               type="button"
-              className="cursor-pointer"
+              className="cursor-pointer rounded-sm text-deep-brown transition-colors duration-200 ease-in-out dark:text-dark-text"
               aria-expanded={isMenuToggle}
               aria-label="Open navigation menu"
               onClick={() => setMenuToggle(true)}
             >
-              <HiOutlineMenuAlt1 color="white" size={30} />
+              <HiOutlineMenuAlt1 size={30} />
             </button>
           )}
         </div>
       </div>
       {isMenuToggle && (
-        <div className=" flex z-10 h-full flex-col w-full gap-5 absolute sm:hidden items-center bg-black top-20">
+        <div className="absolute top-20 z-10 flex h-full w-full flex-col items-center gap-5 bg-cream transition-colors duration-300 dark:bg-dark-bg sm:hidden">
           <>
             <NavBar
               navItems={CONSTANTS.navItems}

@@ -1,7 +1,7 @@
 export default function Projects() {
     return (
         <>
-        <h1 className="text-white">Project page</h1>
+        <h1 className="text-espresso dark:text-latte">Project page</h1>
         </>
     );
 }

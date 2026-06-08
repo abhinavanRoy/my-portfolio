@@ -47,13 +47,13 @@ export default function ContactForm() {
             message,
           });
         }}
-        className="flex flex-col py-4 items-center gap-4 "
+        className="flex flex-col items-center gap-4 py-4"
       >
         <input
           required
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full max-w-md rounded-md p-2 font-google-sans text-lg font-normal outline-none focus:ring-2 focus:ring-white/70"
+          className="w-full max-w-md rounded-md border border-transparent bg-tan p-2 font-google-sans text-lg font-normal text-deep-brown outline-none placeholder:text-deep-brown/60 focus:ring-2 focus:ring-latte dark:border-dark-border dark:bg-dark-surface dark:text-dark-text dark:placeholder:text-dark-muted/70"
           type="text"
           placeholder="Name"
         />
@@ -61,7 +61,7 @@ export default function ContactForm() {
           value={email}
           required
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full max-w-md rounded-md p-2 font-google-sans text-lg font-normal outline-none focus:ring-2 focus:ring-white/70"
+          className="w-full max-w-md rounded-md border border-transparent bg-tan p-2 font-google-sans text-lg font-normal text-deep-brown outline-none placeholder:text-deep-brown/60 focus:ring-2 focus:ring-latte dark:border-dark-border dark:bg-dark-surface dark:text-dark-text dark:placeholder:text-dark-muted/70"
           type="email"
           placeholder="Email"
         />
@@ -69,7 +69,7 @@ export default function ContactForm() {
           required
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="min-h-32 w-full max-w-md rounded-md p-2 font-google-sans text-lg font-normal outline-none focus:ring-2 focus:ring-white/70"
+          className="min-h-32 w-full max-w-md rounded-md border border-transparent bg-tan p-2 font-google-sans text-lg font-normal text-deep-brown outline-none placeholder:text-deep-brown/60 focus:ring-2 focus:ring-latte dark:border-dark-border dark:bg-dark-surface dark:text-dark-text dark:placeholder:text-dark-muted/70"
           placeholder="Message"
         />
         <Button
