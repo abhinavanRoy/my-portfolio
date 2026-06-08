@@ -2,21 +2,49 @@
 import CONSTANTS from "../lib/constants/Constants";
 import Lottie from "lottie-react";
 import animationData from "../assets/lotties/heroAnim.json";
+import { useFirstVisit } from "../lib/hooks/useFirstVisit";
 
 export default function Home() {
+  const isFirstVisit = useFirstVisit("home");
+  const nameAnimationClass = isFirstVisit ? "opacity-0 animate-fade-in-up" : "";
+  const subtitleAnimationClass = isFirstVisit
+    ? "opacity-0 animate-fade-in-up-delayed"
+    : "";
+  const lottieAnimationClass = isFirstVisit
+    ? "opacity-0 animate-fade-in-up-delayed-2"
+    : "";
+  const quoteAnimationClass = isFirstVisit
+    ? "opacity-0 animate-fade-in-up-delayed-3"
+    : "";
+
   return (
-    <div className="flex flex-col gap-5 items-center p-5">
-      <h1 className="text-white font-paprika text-4xl md:text-6xl">
+    <div className="mx-auto flex max-w-4xl flex-col items-center gap-5 px-5 py-8 text-center">
+      <h1
+        className={`bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text pb-1 font-paprika text-4xl leading-tight text-transparent md:text-6xl ${nameAnimationClass}`}
+      >
         {CONSTANTS.abhinavanRoy}
       </h1>
-      <p className="text-white text-wrap font-poppins text-xl sm:text-xl md:text-2xl text-center font-light opacity-85">
+      <p
+        className={`max-w-2xl text-wrap font-google-sans text-xl font-light text-white opacity-[0.85] sm:text-xl md:text-2xl ${subtitleAnimationClass}`}
+      >
         {CONSTANTS.shortDetail}
       </p>
-      <Lottie
-        style={{ width: 320, height: 320 }}
-        animationData={animationData}
-        loop={true}
-      />
+      <div className={lottieAnimationClass}>
+        <Lottie
+          style={{ width: 320, height: 320 }}
+          animationData={animationData}
+          loop={true}
+          aria-hidden="true"
+        />
+      </div>
+      <blockquote
+        className={`max-w-lg px-4 text-center font-playwrite text-base text-white/70 sm:text-lg md:text-xl ${quoteAnimationClass}`}
+      >
+        "Make it work, make it right, make it fast."
+        <footer className="mt-2 text-sm text-white/50 sm:text-base">
+          - Kent Beck
+        </footer>
+      </blockquote>
     </div>
   );
 }
