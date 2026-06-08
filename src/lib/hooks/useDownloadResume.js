@@ -9,6 +9,9 @@ export const useDownloadResume = () => {
             setResumeDownloading(true)
 
             const response = await fetch("/CV_Abhinavan_Roy.pdf")
+            if (!response.ok) {
+                throw new Error("Resume file is unavailable right now.")
+            }
             const blob = await response.blob()
             const url = window.URL.createObjectURL(blob)
             const a = document.createElement("a")
@@ -21,6 +24,7 @@ export const useDownloadResume = () => {
 
         } catch (error) {
             console.error("Resume download failed", error)
+            window.alert("Resume is unavailable right now. Please try again later.")
         } finally {
             setResumeDownloading(false)
         }

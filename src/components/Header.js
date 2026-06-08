@@ -24,7 +24,7 @@ export default function Header() {
         <NavBar navItems={CONSTANTS.navItems} className={"hidden sm:flex "} />
 
         <Button
-          className={"hidden sm:flex sm:text-md md:text-lg"}
+          className={"hidden sm:flex sm:text-base md:text-lg"}
           onClick={() => {
             downloadResume();
           }}
@@ -37,19 +37,25 @@ export default function Header() {
 
         <div className="flex sm:hidden">
           {isMenuToggle ? (
-            <AiOutlineClose
+            <button
+              type="button"
               className="cursor-pointer"
+              aria-expanded={isMenuToggle}
+              aria-label="Close navigation menu"
               onClick={() => setMenuToggle(false)}
-              color="white"
-              size={30}
-            />
+            >
+              <AiOutlineClose color="white" size={30} />
+            </button>
           ) : (
-            <HiOutlineMenuAlt1
+            <button
+              type="button"
               className="cursor-pointer"
+              aria-expanded={isMenuToggle}
+              aria-label="Open navigation menu"
               onClick={() => setMenuToggle(true)}
-              color="white"
-              size={30}
-            />
+            >
+              <HiOutlineMenuAlt1 color="white" size={30} />
+            </button>
           )}
         </div>
       </div>
@@ -63,7 +69,7 @@ export default function Header() {
               setMenuToggle={setMenuToggle}
             />
             <Button
-              className={"flex text-md text-lg"}
+              className={"flex text-base"}
               onClick={() => {
                 downloadResume();
               }}
